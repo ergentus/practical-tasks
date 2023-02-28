@@ -24,7 +24,7 @@ type TasksPropsType = {
 
 export const Tasks = (probs: TasksPropsType): JSX.Element => {
    return (
-      <div>
+      <div className='main-list'>
          <h2>{probs.data.title}</h2>
          <div>
             <input />
@@ -40,11 +40,7 @@ export const Tasks = (probs: TasksPropsType): JSX.Element => {
             </ul>
             <h3>List of current students</h3>
             <ol>
-               {probs.data.students.map((e) => {
-                  return (
-                     <li>{e}</li>
-                  )
-               })}
+               {probs.data.students.map((e) => <li>{e}</li>)}
             </ol>
          </div>
       </div>

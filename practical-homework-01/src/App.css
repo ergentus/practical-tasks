@@ -24,3 +24,13 @@
   opacity: 0.5;
 }
 
+.main-list {
+  padding: 20px;
+  background-color: rgb(197, 243, 255);
+  border: 5px solid rgb(114, 175, 162);
+  border-radius: 10px;
+}
+
+.main-list ol li {
+  font: 16px Georgia, sans-serif;
+}

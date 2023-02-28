@@ -58,7 +58,7 @@ function App(): JSX.Element {
             'Ralphie Hebert',
         ]
     }
-    const data2 = {
+    const data2: ObjectType = {
         title: "What to learn",
         tasks: [
             { taskId: 1, title: "HTML&CSS", isDone: true },

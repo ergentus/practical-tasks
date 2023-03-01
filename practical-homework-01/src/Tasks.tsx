@@ -28,7 +28,7 @@ export const Tasks = (probs: TasksPropsType): JSX.Element => {
          <h2>{probs.data.title}</h2>
          <div>
             <input />
-            <button>Add student</button>
+            <button>Add</button>
          </div>
          <div>
             <ul>

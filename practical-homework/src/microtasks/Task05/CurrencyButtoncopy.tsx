@@ -1,6 +1,7 @@
 import React from 'react'
+import { FilterType } from './Task05'
 
-type MoneyType = {
+export type MoneyType = {
    banknotes: string
    value: number
    number: string
@@ -8,7 +9,7 @@ type MoneyType = {
 
 type CurrencyButtonTypeProps = {
    data: MoneyType[]
-   callBack: () => void
+   onClickFilterHandler: (currency: FilterType) => void
 }
 
 const CurrencyButton = (props: CurrencyButtonTypeProps) => {
@@ -26,12 +27,11 @@ const CurrencyButton = (props: CurrencyButtonTypeProps) => {
             })}
          </ul>
          <div style={{ marginLeft: '20px' }} >
-            <button onClick={props.callBack}>All</button>
-            <button onClick={props.callBack}>Rubles</button>
-            <button onClick={props.callBack}>Dollars</button>
+            <button onClick={() => props.onClickFilterHandler('All')}>All</button>
+            <button onClick={() => props.onClickFilterHandler('Rubles')}>Rubles</button>
+            <button onClick={() => props.onClickFilterHandler('Dollars')}>Dollars</button>
          </div>
       </>
-
    )
 }
 

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import CurrencyButton from './CurrencyButton'
+import CurrencyButton, { MoneyType } from './CurrencyButtoncopy'
 
-type FilterType = 'All' | 'Rubles' | 'Dollars'
+export type FilterType = 'All' | 'Rubles' | 'Dollars'
 
 const Task05 = () => {
 
-   const money = [
+   const money: MoneyType[] = [
       { banknotes: 'Dollars', value: 100, number: ' a1234567890' },
       { banknotes: 'Dollars', value: 50, number: ' z1234567890' },
       { banknotes: 'Rubles', value: 100, number: ' w1234567890' },
@@ -18,8 +18,11 @@ const Task05 = () => {
 
    const [filter, setFilter] = useState<FilterType>('All')
 
-   let currentMoney = money
+   const onClickFilterHandler = (currency:FilterType) => {
+      setFilter(currency)
+   }
 
+   let currentMoney = money
    if (filter === 'Dollars') {
       currentMoney = money.filter(((e) => e.banknotes === 'Dollars'))
    }
@@ -27,26 +30,9 @@ const Task05 = () => {
       currentMoney = money.filter(((e) => e.banknotes === 'Rubles'))
    }
 
-   const onClickFilterHandler = (currency: FilterType) => {
-      setFilter(currency)
-   }
-
    return (
       <>
-         <ul>
-            {currentMoney.map((e, i) => {
-               return (
-                  <li key={i}>
-                     <span>{e.banknotes}</span>
-                     <span>{e.number}</span>
-                     <span>{e.value}</span>
-                  </li>
-               )
-            })}
-         </ul>
-         <CurrencyButton title={'All'} callBack={() => onClickFilterHandler('All')} data={money} />
-         <CurrencyButton title={'Dollars'} callBack={() => onClickFilterHandler('Dollars')} data={money} />
-         <CurrencyButton title={'Rubles'} callBack={() => onClickFilterHandler('Rubles')} data={money} />
+         <CurrencyButton data={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
       </>
    )
 }

@@ -2,13 +2,15 @@ import React from 'react'
 
 type ButtonTypeProps = {
    name: string
-   callBack:() => void
+   callBack: () => void
 }
 
 export const Button = (props: ButtonTypeProps) => {
 
    return (
-      <button onClick={props.callBack}>{props.name}</button>
+      <>
+         <button onClick={props.callBack}>{props.name}</button>
+      </>
    )
 }
 

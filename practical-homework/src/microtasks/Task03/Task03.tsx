@@ -1,4 +1,4 @@
-import React, { MouseEvent } from 'react'
+import React, { MouseEvent, useState } from 'react'
 import './../../App.css'
 import { Button } from './components/Button'
 
@@ -21,14 +21,11 @@ const Task03 = () => {
       //       console.log(name)
       //    }
       <div className='App'>
-
          {/* <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('VASYA')}>MyYouTubeChannel-1</button> */}
          {/* <button onClick={(event: MouseEvent<HTMLButtonElement>) => onClickHandler('IVAN')}>MyYouTubeChannel-2</button> */}
-
          <Button name={'MyYouTubeChannel-1'} callBack={() => Button1Foo('Im Vasya', 21, 'live in Minsk')} />
          <Button name={'MyYouTubeChannel-2'} callBack={() => Button2Foo('Im Ivan')} />
          <Button name={'STUPID_BUTTON'} callBack={Button3Foo} />
-
       </div >
    )
 }

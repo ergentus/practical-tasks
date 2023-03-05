@@ -7,6 +7,8 @@ import Task01 from './microtasks/Task01/Task01';
 import Task02 from './microtasks/Task02/Task02';
 import Task03 from './microtasks/Task03/Task03';
 import Task04 from './microtasks/Task04/Task04';
+import Task05 from './microtasks/Task05/Task05';
+import Task06 from './microtasks/Task05/variant2/Task06';
 
 
 const container = document.getElementById('root') as HTMLElement
@@ -15,8 +17,10 @@ root.render(
    // <App />
    //<Task01 />
    //<Task02 />
-   //<Task03 />
-   <Task04 />
+   // <Task03 />
+   //<Task04 />
+   //<Task05 />
+   <Task06 />
 );
 
 // If you want your app to work offline and load faster, you can change

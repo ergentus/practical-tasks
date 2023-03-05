@@ -1,6 +1,6 @@
 import React from 'react'
-import { Cars, CarsType } from './Cars';
-import { NewComponents, StudentType } from './NewComponents';
+import { Cars, CarsType } from './components/Cars/Cars';
+import { NewComponents, StudentType } from './components/NewComponents/NewComponents';
 
 
 const Task02 = () => {

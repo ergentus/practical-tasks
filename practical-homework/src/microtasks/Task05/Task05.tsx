@@ -32,7 +32,7 @@ const Task05 = () => {
 
    return (
       <>
-         <CurrencyButton data={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+         <CurrencyButton data={currentMoney} onClickFilter={onClickFilterHandler}/>
       </>
    )
 }

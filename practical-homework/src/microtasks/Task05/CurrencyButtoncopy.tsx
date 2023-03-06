@@ -9,7 +9,7 @@ export type MoneyType = {
 
 type CurrencyButtonTypeProps = {
    data: MoneyType[]
-   onClickFilterHandler: (currency: FilterType) => void
+   onClickFilter: (currency: FilterType) => void
 }
 
 const CurrencyButton = (props: CurrencyButtonTypeProps) => {
@@ -27,9 +27,9 @@ const CurrencyButton = (props: CurrencyButtonTypeProps) => {
             })}
          </ul>
          <div style={{ marginLeft: '20px' }} >
-            <button onClick={() => props.onClickFilterHandler('All')}>All</button>
-            <button onClick={() => props.onClickFilterHandler('Rubles')}>Rubles</button>
-            <button onClick={() => props.onClickFilterHandler('Dollars')}>Dollars</button>
+            <button onClick={() => props.onClickFilter('All')}>All</button>
+            <button onClick={() => props.onClickFilter('Rubles')}>Rubles</button>
+            <button onClick={() => props.onClickFilter('Dollars')}>Dollars</button>
          </div>
       </>
    )

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './../../App.css'
+import App from '../../Practice01/Practice01';
 
 type Props = {}
 
@@ -7,14 +7,14 @@ const Task04 = (props: Props) => {
 
    //let a = 1
 
-   let [a, setA]=useState(1)
+   let [a, setA] = useState(1)
 
    const onClickHandler = () => {
       setA(a += 1)
    }
 
    const onClickHandlerNull = () => {
-      setA(a = 0)   
+      setA(a = 0)
    }
 
 

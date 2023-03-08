@@ -1,0 +1,36 @@
+
+.Practice01 {
+  padding: 30px;
+  display: flex;
+}
+
+.Practice01 > div {
+  margin-right: 50px;
+}
+
+.error {
+  border: red 1px solid;
+}
+
+.error-message {
+  color: red;
+}
+
+.active-filter {
+  background-color: aquamarine;
+}
+
+.is-done {
+  opacity: 0.5;
+}
+
+.main-list {
+  padding: 20px;
+  background-color: rgb(197, 243, 255);
+  border: 5px solid rgb(114, 175, 162);
+  border-radius: 10px;
+}
+
+.main-list ol li {
+  font: 16px Georgia, sans-serif;
+}

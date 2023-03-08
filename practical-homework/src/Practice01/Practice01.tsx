@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './Practice01.css';
 import { Tasks, ObjectType } from './Tasks';
 
 
-function App(): JSX.Element {
+function Practice01(): JSX.Element {
     const data1: ObjectType = {
         title: "What to do",
         tasks: [
@@ -119,14 +119,14 @@ function App(): JSX.Element {
     }
 
     return (
-        <div className="App">
+        <div className="Practice01">
             <Tasks data={data1} />
             <Tasks data={data2} />
         </div>
     );
 }
 
-export default App;
+export default Practice01;
 
 
 
@@ -156,7 +156,7 @@ export default App;
 
 //--------------------------------------------------------------
 // import React from 'react';
-// import './App.css';
+// import './practice01.css';
 // import {Tasks} from "./Tasks";
 //
 // export type DataType = {
@@ -171,7 +171,7 @@ export default App;
 // }
 //
 //
-// function App() {
+// function practice01() {
 //     const data1= {
 //         title: "What to do",
 //         tasks: [
@@ -287,17 +287,17 @@ export default App;
 //     }
 //
 //     return (
-//         <div className="App">
+//         <div className="practice01">
 //             <Tasks data={data1}/>
 //             <Tasks data={data2}/>
 //         </div>
 //     );
 // }
 //
-// export default App;
+// export default practice01;
 
 // import React from 'react';
-// import {DataType} from "./App";
+// import {DataType} from "./practice01";
 //
 // type  TasksPropsType = {
 //     data: DataType

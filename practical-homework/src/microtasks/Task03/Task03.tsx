@@ -1,5 +1,4 @@
-import React, { MouseEvent, useState } from 'react'
-import './../../App.css'
+import React, { useState } from 'react'
 import { Button } from './components/Button'
 
 const Task03 = () => {

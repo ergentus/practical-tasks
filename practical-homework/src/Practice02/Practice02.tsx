@@ -45,7 +45,8 @@ function Practice02() {
 
     return (
         <div className="Practice02">
-            <Todolist title="What to learn"
+            <Todolist 
+                title="What to learn"
                 tasks={tasks}
                 removeTask={removeTask}
                 removeAllTasks={removeAllTasks}/>
